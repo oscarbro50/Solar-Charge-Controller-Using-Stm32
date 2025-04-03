@@ -1,0 +1,4 @@
+../Core/Src/Pwm_Operations.c:9:6:set_duty_cycle	3
+../Core/Src/Pwm_Operations.c:27:6:decrement_duty_cycle	3
+../Core/Src/Pwm_Operations.c:43:6:increment_duty_cycle	3
+../Core/Src/Pwm_Operations.c:60:6:stop_pwm	1
