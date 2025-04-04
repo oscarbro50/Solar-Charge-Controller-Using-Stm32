@@ -1,0 +1,3 @@
+../Core/Src/Adc.c:12:6:HAL_ADC_ConvCpltCallback	1
+../Core/Src/Adc.c:21:6:MX_ADC1_Init	6
+../Core/Src/Adc.c:103:7:get_calibrated_voltage	2

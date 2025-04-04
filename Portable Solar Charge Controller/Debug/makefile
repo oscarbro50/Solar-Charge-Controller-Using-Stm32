@@ -61,8 +61,8 @@ all: main-build
 main-build: Portable\ Solar\ Charge\ Controller.elf secondary-outputs
 
 # Tool invocations
-Portable\ Solar\ Charge\ Controller.elf Portable\ Solar\ Charge\ Controller.map: $(OBJS) $(USER_OBJS) D:\Adeel\Projects\Solar-Charge-Controller-With-Stm32\Portable\ Solar\ Charge\ Controller\STM32H7A3ZITXQ_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Portable Solar Charge Controller.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\Adeel\Projects\Solar-Charge-Controller-With-Stm32\Portable Solar Charge Controller\STM32H7A3ZITXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="Portable Solar Charge Controller.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Portable\ Solar\ Charge\ Controller.elf Portable\ Solar\ Charge\ Controller.map: $(OBJS) $(USER_OBJS) D:\Adeel\Projects\Solar-Charge-Controller-Using-Stm32\Portable\ Solar\ Charge\ Controller\STM32H7A3ZITXQ_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Portable Solar Charge Controller.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\Adeel\Projects\Solar-Charge-Controller-Using-Stm32\Portable Solar Charge Controller\STM32H7A3ZITXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="Portable Solar Charge Controller.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
